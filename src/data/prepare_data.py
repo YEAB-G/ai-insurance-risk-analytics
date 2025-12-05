@@ -27,8 +27,8 @@ from .load_data import load_raw_data
 
 RAW_PATH = os.path.join("data", "raw", "MachineLearningRating_v3.txt")
 
-
 PROCESSED_PATH = os.path.join("data", "processed", "insurance_clean.csv")
+
 
 
 def basic_cleaning(df: pd.DataFrame) -> pd.DataFrame:
