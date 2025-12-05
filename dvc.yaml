@@ -1,6 +1,6 @@
 stages:
   prepare_data:
-    cmd: python src/data/prepare_data.py
+    cmd: python -m src.data.prepare_data
     deps:
       - src/data/prepare_data.py
       - data/raw/MachineLearningRating_v3.txt

@@ -19,7 +19,8 @@ import os
 import numpy as np
 import pandas as pd
 
-from .load_data import load_raw_data
+from src.data.load_data import load_raw_data
+
 
 
 
