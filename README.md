@@ -120,5 +120,5 @@ This repo is named **ai-insurance-risk-analytics** to clearly communicate:
 - Skillset: AI & Machine Learning
 - Tooling: MLOps-style project layout
 
-You can link this project on your CV/LinkedIn as an example of
+
 **end-to-end AI/ML for insurance pricing & risk**.
