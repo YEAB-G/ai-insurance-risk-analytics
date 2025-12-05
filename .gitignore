@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (use DVC instead)
+data/raw/
+data/interim/
+data/processed/
+*.csv
+*.parquet
+
+# DVC cache (if local)
+.dvc/cache/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
