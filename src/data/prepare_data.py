@@ -65,7 +65,9 @@ def main() -> None:
             f"Raw data not found at {RAW_PATH}. Please place your dataset there first."
         )
 
-    df_raw = load_raw_data(RAW_PATH)
+   
+    df_raw = load_raw_data(RAW_PATH, sep=",")  # or sep="\t"
+
     df_clean = basic_cleaning(df_raw)
 
     os.makedirs(os.path.dirname(PROCESSED_PATH), exist_ok=True)
