@@ -1,8 +1,8 @@
 stages:
   prepare_data:
-    cmd: python src/data/prepare_data.py
+    cmd: python -m src.data.prepare_data
     deps:
       - src/data/prepare_data.py
-      - data/raw/insurance.csv
+      - data/raw/MachineLearningRating_v3.txt
     outs:
       - data/processed/insurance_clean.csv

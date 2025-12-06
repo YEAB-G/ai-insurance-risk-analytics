@@ -15,20 +15,25 @@ def _parse_dates(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def load_raw_data(path: str = os.path.join("data", "raw", "insurance.csv")) -> pd.DataFrame:
+def load_raw_data(
+    path: str = os.path.join("data", "raw", "MachineLearningRating_v3.txt"),
+    sep: str = ","  # change to "\t" or "|" if needed
+) -> pd.DataFrame:
     """Load the raw insurance dataset.
 
     Parameters
     ----------
     path : str
-        File path to the raw CSV file.
+        File path to the raw data file.
+    sep : str
+        Delimiter for the file.
 
     Returns
     -------
     pd.DataFrame
         Raw dataset with parsed date columns (if present).
     """
-    df = pd.read_csv(path)
+    df = pd.read_csv(path, sep=sep)
     return _parse_dates(df)
 
 

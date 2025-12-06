@@ -11,14 +11,16 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Data (use DVC instead)
-data/raw/
-data/interim/
-data/processed/
+data/raw/*
+data/interim/*
+data/processed/*
 *.csv
 *.parquet
 
-# DVC cache (if local)
-.dvc/cache/
+# Keep DVC metadata files
+!data/raw/*.dvc
+!data/interim/*.dvc
+!data/processed/*.dvc
 
 # OS / IDE
 .DS_Store
